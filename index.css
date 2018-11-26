@@ -2,6 +2,7 @@ body {
   display: flex;
   flex-direction: row;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 #left {
@@ -32,13 +33,13 @@ body {
 }
 
 #logo {
-  font-family: "Sarina", cursive;
   color: white;
   font-size: 80px;
   transform: rotate(270deg);
   position: absolute;
   left: 58%;
   top: 22%;
+  font-weight: bold;
 }
 
 #inner-left:hover #hoverShow1 {
@@ -61,7 +62,6 @@ body {
   height: 250px;
   left: 180px;
   top: 100px;
-  font-family: "Comfortaa", cursive;
   color: white;
   text-align: center
 }
