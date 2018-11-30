@@ -90,3 +90,9 @@ body {
   top: 22%;
   left: 16%;
 }
+
+#link {
+  margin-left:20%;
+  color:#fffff;
+  font-size:40px;
+}
