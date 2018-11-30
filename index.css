@@ -8,14 +8,14 @@ body {
 #left {
   height: 100vh;
   width: 50vw;
-  background-color: #1D2731;
+  background-color: #131334;
   margin: 0;
 }
 
 #inner-left {
   height: 60vh;
   width: 30vw;
-  background-color: #328CC1;
+  background-color: #69baba;
   position: absolute;
   top: 20%;
   right: 50%;
@@ -34,11 +34,11 @@ body {
 
 #logo {
   color: white;
-  font-size: 80px;
+  font-size: 100px;
   transform: rotate(270deg);
   position: absolute;
   left: 58%;
-  top: 22%;
+  top: 24%;
   font-weight: bold;
 }
 
@@ -58,25 +58,26 @@ body {
 #inner-left #hoverShow1 {
   display: none;
   position: absolute;
-  width: 250px;
+  width: 275px;
   height: 250px;
-  left: 180px;
-  top: 100px;
+  left: 215px;
+  top: 165px;
   color: white;
-  text-align: center
+  text-align: center;
+  font-size: 18px;
 }
 
 #right {
   height: 100vh;
   width: 50vw;
-  background-color: #0B3C5D;
+  background-color: #dbfafaff;
   margin: 0;
 }
 
 #inner-right {
   height: 60vh;
   width: 45vw;
-  background-color: #D9B310;
+  background-color: #ffe082;
   position: absolute;
   top: 20%;
   left: 50%;
@@ -86,6 +87,6 @@ body {
 
 #video {
   position: absolute;
-  top: 15%;
-  left: 7.5%;
+  top: 22%;
+  left: 16%;
 }
