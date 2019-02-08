@@ -3,7 +3,6 @@ body {
   flex-direction: row;
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  /* background-color: #B5E4E4; */
   z-index:1;
 }
 
@@ -13,21 +12,15 @@ div {
 
 #main {
   margin: auto;
-  /* margin-top: 5vh; */
-  /* background-color: black; */
   width: 100%;
-  /* height: 75vh; */
   display: flex;
   flex-direction: column;
-  /* z-index: 8; */
   position: relative;
-  /* border: solid; */
 }
 
 img {
   margin: auto;
   display: flex;
-  /* padding: 4%; */
   position: relative;
   z-index: 8;
 }
@@ -35,7 +28,6 @@ img {
 #screenshot {
   padding: 0%;
   border:thick solid;
-  /* color: rgb(10, 1, 73) */
   color: white;
 }
 
@@ -63,8 +55,6 @@ img {
 }
 
 iframe {
-  /* border: solid; */
-  /* padding: 1%; */
   color: white;
   margin-left: 4%;
   z-index: 10;
@@ -73,20 +63,16 @@ iframe {
 }
 
 #description1 {
-  /* border: solid; */
   display: flex;
   flex-direction: column;
-  /* color: rgb(96, 96, 96); */
   color: black;
   width: 40%;
   height: 40rem;
-  /* padding: 1%; */
   margin-left: 4%;
   margin-top: 4rem;
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
   display: flex;
-  /* font-weight: bold; */
 }
 
 #description2 {
@@ -95,7 +81,6 @@ iframe {
   color: black;
   width: 40%;
   height: 40rem;
-  /* padding: 1%; */
   margin-left: 4%;
   margin-top: 4rem;
   font-size: 18px;
@@ -306,7 +291,7 @@ a {
 
  .iframeContainer {
   margin-left: 6%;
-  width: 100%;
+  width: 95%;
    height: 35%;
  }
 
