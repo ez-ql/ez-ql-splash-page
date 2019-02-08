@@ -1,46 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="theme-color" content="#000000" />
-    <link rel="stylesheet" href="./index.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto"
-      rel="stylesheet"
-    />
-    <title>Making a splash w/ ez*ql</title>
-  </head>
-  <body>
-    <div id="left">
-      <div id="inner-left">
-        <div id="hoverShow1">
-          <p>
-            The desktop application ez*ql is an intuitive, accessible postgres
-            database querying tool for non-technical and technical users alike
-            to extract insights from and visualize their data.
-          </p>
-          <p>
-            Our goal is to provide an easy-to-use tool that provides the user
-            with an enhanced and enjoyable experience.
-          </p>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="theme-color" content="#000000" />
+  <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet" /> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico" />
+  <link rel="stylesheet" href="./index.css" />
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" /> -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato" />
+  <title>ez*ql</title>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- <script src="index.js" defer></script> -->
+</head>
+
+<body>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+  <div id="main">
+    <img src="ezql_logo.png" alt="ez*ql logo" height="250" width="250" />
+    <div id="content">
+      <div id="embed">
+        <iframe width="600" height="400" src="https://www.youtube.com/embed/ds3DQiVp3L4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <div id="buttons">
+          <a href="https://www.github.com/ez-ql/ez-ql-electron-react" id="link">VIEW CODE</a>
+          <button id="preview" onclick="$('#modal1').modal('open');">
+            PREVIEW ez*ql
+          </button>
         </div>
-        <p id="logo">ez*ql</p>
       </div>
-      <div>
-        <a href="https://github.com/ez-ql/ez-ql-electron-react">
-          <img id="github-logo" src="./images/GitHub-Mark-120px-plus.png" />
-        </a>
-        <p id="link" >github.com/ez-ql/ez-ql-electron-react</p>
-      </div>    
-     </div>
-    <div id="right">
-      <div id="inner-right">
-        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/BmRUJ9E_ERI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <div id="description">
+        <h1 id="title">
+          An Easy SQL Query Builder For Everyone
+        </h1>
+        <p>
+          The desktop application ez*ql is an intuitive and accessible
+          postgres database querying tool for non-technical and technical
+          users alike to extract insights from and visualize their data.
+        </p>
+        <!-- <p>
+                Our goal is to provide an easy-to-use tool that provides the user
+                with an enhanced and enjoyable experience.
+              </p> -->
       </div>
     </div>
-  </body>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content" id="modalContent">
+
+
+        <div class="card1">
+          <div class="products">
+            <div class="product active" product-id="1" product-color="#D18B49">
+              <div class="thumbnail"><img src="ezql_1.png" alt="1 of 3 screenshots of ezql" height="500" width="750"  id="screenshot"></div>
+              <h1 class="title">Your Dashboard with Saved Projects</h1>
+            </div>
+            <div class="product" product-id="2" product-color="#542F13">
+                <div class="thumbnail"><img src="ezql_2.png" alt="1 of 3 screenshots of ezql" height="500" width="750"  id="screenshot"></div>
+                <h1 class="title">View Saved Queries in a Project</h1>
+            </div>
+            <div class="product" product-id="3" product-color="#A5AAAE">
+                <div class="thumbnail"><img src="ezql_3.png" alt="1 of 3 screenshots of ezql" height="500" width="750"  id="screenshot"></div>
+                <h1 class="title">Select a Table To Create a New Query</h1>
+            </div>
+            <div class="product" product-id="4" product-color="#ED8D1F">
+                <div class="thumbnail"><img src="ezql_4.png" alt="1 of 3 screenshots of ezql" height="500" width="750"  id="screenshot"></div>
+                <h1 class="title">Select Fields with an Interactive Carousel </h1>
+            </div>
+            <div class="product" product-id="5" product-color="#C4C8CB">
+                <div class="thumbnail"><img src="ezql_5.png" alt="1 of 3 screenshots of ezql" height="500" width="750"  id="screenshot"></div>
+                <h1 class="title">Preview Results of an In-Progress Query</h1>
+            </div>
+            <div class="product" product-id="6" product-color="#C4C8CB">
+                <div class="thumbnail"><img src="ezql_6.png" alt="1 of 3 screenshots of ezql" height="500" width="750"  id="screenshot"></div>
+              <h1 class="title">Filter your New Query</h1>
+              </div>
+              <div class="product" product-id="7" product-color="#C4C8CB">
+                  <div class="thumbnail"><img src="ezql_7.png" alt="1 of 3 screenshots of ezql" height="500" width="750"  id="screenshot"></div>
+                  <h1 class="title">View Results — Save, Filter, Export to CSV</h1>
+                </div>
+          </div>
+          <div class="footer"><a class="btn" id="prev" href="#" ripple="" ripple-color="#666666">Prev</a><a class="btn"
+              id="next" href="#" ripple="" ripple-color="#666666">Next</a></div>
+        </div>
+
+
+
+
+        <!-- <h4>Modal Header</h4>
+        <p>A bunch of text</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+      </div> -->
+    </div>
+    <!-- <script>
+      $(document).ready(function () {
+
+      });
+    </script> -->
+    <script>
+      $(document).ready(function () {
+
+        $(".modal").modal();
+        $("#modal1").on("click", function () { });
+
+        var productItem = $('.product'),
+          productCurrentItem = productItem.filter('.active');
+
+        $('#next').on('click', function (e) {
+          e.preventDefault();
+
+          var nextItem = productCurrentItem.next();
+
+          productCurrentItem.removeClass('active');
+
+          if (nextItem.length) {
+
+            productCurrentItem = nextItem.addClass('active');
+          } else {
+            productCurrentItem = productItem.first().addClass('active');
+          }
+
+        });
+
+        $('#prev').on('click', function (e) {
+          e.preventDefault();
+
+          var prevItem = productCurrentItem.prev();
+
+          productCurrentItem.removeClass('active');
+
+          if (prevItem.length) {
+            productCurrentItem = prevItem.addClass('active');
+          } else {
+            productCurrentItem = productItem.last().addClass('active');
+          }
+        });
+      });
+    </script>
+
+    <!-- <div>
+        <img src="ezql_1.png" alt="1 of 3 screenshots of ezql" height="150" width="200" id="screenshot">
+        <img src="ezql_2.png" alt="2 of 3 screenshots of ezql" height="150" width="200" id="screenshot">
+        <img src="ezql_3.png" alt="3 of 3 screenshots of ezql"  height="150" width="200" id="screenshot">
+      </div> -->
+  </div>
+</div>
+  <div id="background"></div>
+</body>
+
 </html>
