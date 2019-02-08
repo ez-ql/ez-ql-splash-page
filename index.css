@@ -59,14 +59,17 @@ img {
   display: flex;
   flex-direction: column;
   /* padding: 4%; */
+  border-radius: 10px;
 }
 
 iframe {
   /* border: solid; */
-  padding: 1%;
+  /* padding: 1%; */
   color: white;
   margin-left: 4%;
   z-index: 10;
+  border:3px solid black;
+  border-radius: 10px;
 }
 
 #description {
@@ -260,10 +263,10 @@ a {
   font-size:40px;
 } */
 
-#modal1 {
-  height: 50rem;
-  width: 90vw;
-  max-width: 63rem;
+.modal #modal1 {
+  /* height: 50rem; */
+  /* width: 800px;
+  max-width: 800px; */
   max-height: 100%;
   align-items: center;
   opacity: 0;
@@ -272,8 +275,7 @@ a {
 
 #modalContent {
   padding: 44px;
-  width: 63rem;
-  border-radius: 8px;
+  /* width: 63rem; */
 }
 
 /* $base-background: #00CC99; */
@@ -302,14 +304,15 @@ a {
 
 .card1 {
   /* background: #FFFFFF; */
-  width: 60rem;
-  height: 45rem;
+  width: 800px;
+  height: 42rem;
   /* margin: 100px auto; */
   /* border-radius: 12px; */
   /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); */
   /* box-sizing: border-box; */
   /* padding: 48px; */
   text-align: center;
+  margin: auto;
   display: flex;
   flex-direction: column;
 
@@ -319,10 +322,9 @@ a {
   position: relative;
   overflow: hidden;
   transition: 0.5s ease;
-  height: 700px;
-  width: 60rem;
+  /* height: 700px; */
+  /* width: 900px; */
   display:flex;
-
 }
 
 .product {
@@ -331,26 +333,31 @@ a {
   left: 0;
   opacity: 0;
   visibility: hidden;
-  transition: 0.5s ease;
   display:flex;
   flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
 }
 .product.active {
+  position:relative;
+  height:700px;
   opacity: 1;
   visibility: visible;
   z-index: 9;
-
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .thumbnail {
   margin: 0 0 48px;
+  height:500px;
   border: thin solid;
   color: darkgrey;
-  box-shadow: 0 2px 5px
+  box-shadow: 0 1px 3px
 }
 
 .title {
-  height: 20%;
+  /* height: 20%; */
   margin: 0 0 6px;
   color: rgb(41, 65, 65);
   font-size: 30px;
@@ -370,6 +377,7 @@ a {
   flex-direction: row;
   justify-content: space-between;
   margin: 0 -12px -12px;
+  justify-self: flex-end
 }
 
 #prev {
