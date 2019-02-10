@@ -400,14 +400,18 @@ a {
     width:90%;
     height: auto;
   }
-  #embed {
+  /* #embed {
     height: 60%;
+    width: 95%;
+  } */
+  #embed {
+    height: 100%;
     width: 95%;
   }
   .iframeContainer {
     margin-left: auto;
     margin-right: auto;
-    /* height: 30%; */
+    height: 30%;
   }
   .respLogo {
     height:225px;
