@@ -358,7 +358,7 @@ a {
 }
 
 /* mobile */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 749px) {
   #description1 {
     display: none;
   }
@@ -391,41 +391,6 @@ a {
   }
 }
 
-/* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 750px) {
-  #description1 {
-    display: none;
-  }
-  #description2 {
-    display: flex;
-    width:90%;
-    height: auto;
-  }
-  /* #embed {
-    height: 60%;
-    width: 95%;
-  } */
-  #embed {
-    height: 100%;
-    width: 95%;
-  }
-  .iframeContainer {
-    margin-left: auto;
-    margin-right: auto;
-    height: 30%;
-  }
-  .respLogo {
-    height:225px;
-    width: 225px;
-    padding: 25px;
-  }
-  #background {
-    height: 20rem;
-  }
-  #preview {
-    display: none;
-  }
-}
 
 @media only screen and (min-width: 750px) and (max-width: 960px) {
   #description1 {
