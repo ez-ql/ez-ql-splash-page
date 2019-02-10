@@ -99,13 +99,11 @@
         $(".modal").modal();
         $("#modal1").on("click", function () { });
 
-        var productItem = $('.product'),
+        let productItem = $('.product'),
           productCurrentItem = productItem.filter('.active');
 
-        $('#next').on('click', function (e) {
-          e.preventDefault();
-
-          var nextItem = productCurrentItem.next();
+        function next (e) {
+          let nextItem = productCurrentItem.next();
 
           productCurrentItem.removeClass('active');
 
@@ -115,13 +113,10 @@
           } else {
             productCurrentItem = productItem.first().addClass('active');
           }
+        }
 
-        });
-
-        $('#prev').on('click', function (e) {
-          e.preventDefault();
-
-          var prevItem = productCurrentItem.prev();
+        function previous (e) {
+          let prevItem = productCurrentItem.prev();
 
           productCurrentItem.removeClass('active');
 
@@ -130,7 +125,18 @@
           } else {
             productCurrentItem = productItem.last().addClass('active');
           }
-        });
+        }   
+
+        $('#next').on('click', next);
+
+        $('#prev').on('click', previous);
+
+        $('#modal1').on('keydown', function (e) {
+          console.log(e)
+          if (e.key === 'ArrowRight') next();
+          if (e.key === 'ArrowLeft') previous();
+        })
+
       });
     </script>
   </div>
