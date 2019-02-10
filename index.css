@@ -236,12 +236,17 @@ a {
 }
 
 .title {
-  margin: 0 0 6px;
+  margin: 20px 0 6px;
   color: rgb(41, 65, 65);
   font-size: 30px;
   font-weight: 700;
   transition: 0.5s ease;
   line-height: 0%;
+  height: 40px;
+}
+
+.modal h1 {
+  margin-top: 20px;
 }
 
 .description {
@@ -268,7 +273,7 @@ a {
   transition: 0.5s ease;
   background-color: white;
   box-shadow: 0px 0px 0px 0px;
-  color: darkgray;
+  color: black;
 }
 
 #next {
@@ -281,7 +286,7 @@ a {
   transition: 0.5s ease;
   background-color: white;
   box-shadow: 0px 0px 0px 0px;
-  color: darkgrey;
+  color: black;
  }
 
  .respIframe {
@@ -301,7 +306,7 @@ a {
 .respLogo {
   height:275px;
   width: 275px;
-  padding: 4%;
+  padding: 50px;
 }
 
 .respImg {
@@ -407,6 +412,7 @@ a {
   .respLogo {
     height:225px;
     width: 225px;
+    padding: 25px;
   }
   #background {
     height: 20rem;
@@ -434,8 +440,9 @@ a {
     margin-right: auto;
   }
   .respLogo {
-    height:250px;
-    width: 250px;
+    height:225px;
+    width: 225px;
+    padding: 25px;
   }
   #background {
     height: 20rem;
@@ -455,14 +462,5 @@ a {
   }
   #preview {
     display: none;
-  }
-}
-
-
-@media only screen and (min-width: 960px) {
-  .respLogo {
-    height:250px;
-    width: 250px;
-    padding: 2%;
   }
 }
