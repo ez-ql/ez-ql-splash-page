@@ -383,6 +383,7 @@ a {
     margin-top: 0rem;
     margin-right: 4%;
     z-index: 6;
+    max-width: 500px;
   }
   #embed {
     height: 50%;
@@ -419,7 +420,7 @@ a {
   }
   #description2 {
     display: flex;
-    width:90%;
+    width:80%;
     height: auto;
 
   }
