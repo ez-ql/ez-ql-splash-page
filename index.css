@@ -40,7 +40,6 @@ img {
 }
 
 #content {
-  margin: 1%;
   height: 80rem;
   flex-direction: row;
   display: flex;
@@ -70,6 +69,7 @@ iframe {
   width: 40%;
   height: 40rem;
   margin-left: 4%;
+  margin-right: 4%;
   margin-top: 4rem;
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
@@ -122,6 +122,7 @@ h1 {
   display: flex;
   height:10rem;
   width: 100%;
+  margin-left: 6%;
   padding: 5%;
   justify-content: center
 }
@@ -264,6 +265,7 @@ a {
 }
 
 .footer {
+  margin-left: 6%;
   width: 100%;
   max-width: 63rem;
   display: flex;
@@ -379,16 +381,23 @@ a {
     width:95%;
     height: auto;
     margin-top: 0rem;
+    margin-right: 4%;
     z-index: 6;
   }
   #embed {
     height: 50%;
-    width: 95%;
+    width: 100%;
   }
   .iframeContainer {
-    max-width:800px;
-    margin-left: auto;
+    width: 95%;
+    height: 45%;
+    max-width: 500px;
+    margin-left: 0%;
     margin-right: auto;
+  }
+  #buttons {
+    max-width: 500px;
+    margin-left: 0%;
   }
   .respLogo {
     height:125px;
@@ -412,14 +421,16 @@ a {
     display: flex;
     width:90%;
     height: auto;
+
   }
   #embed {
     height: 100%;
     width: 95%;
   }
   .iframeContainer {
-    margin-left: auto;
+    margin-left: 0%;
     margin-right: auto;
+    width: 95%;
   }
   .respLogo {
     height:225px;
