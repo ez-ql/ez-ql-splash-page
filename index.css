@@ -432,6 +432,9 @@ a {
     margin-right: auto;
     width: 95%;
   }
+  #buttons {
+    margin-left: 0%;
+  }
   .respLogo {
     height:225px;
     width: 225px;
